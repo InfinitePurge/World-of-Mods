@@ -22,6 +22,7 @@ Route::get('/uploads', [UploadsController::class, 'index' ]);
 {
     
 }
+Route::post('/uploads', [UploadsController::class, 'store' ]);
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');

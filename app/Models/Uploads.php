@@ -8,4 +8,12 @@ use Illuminate\Database\Eloquent\Model;
 class Uploads extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'language',
+        'name',
+        'version',
+        'author',
+        'overview',
+        'description'
+    ];
 }

@@ -15,12 +15,13 @@ return new class extends Migration
     {
         Schema::create('uploads', function (Blueprint $table) {
             $table->id();
-            $table->string('Mod name');
-            $table->string('Mod language');
-            $table->string('Current version');
-            $table->string('Author or team name');
-            $table->string('Brief overview');
-            $table->string('Detailed description');
+            $table->string('language'); //Mod language
+            $table->string('name'); //Mod name
+            $table->string('version'); //Current version
+            $table->string('author'); // Author or team name
+            $table->string('overview'); //Brief overview
+            $table->string('description'); //Detailed description
+            //$table->int('ownder');
             $table->timestamps();
         });
     }
