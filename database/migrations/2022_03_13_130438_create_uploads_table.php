@@ -15,8 +15,11 @@ return new class extends Migration
     {
         Schema::create('uploads', function (Blueprint $table) {
             $table->id();
-            $table->string('language'); //Mod language
+            // $table->string('mod');
+            // $table->string('languageradio');
+            $table->string('type');
             $table->string('name'); //Mod name
+            $table->string('language'); //Mod language
             $table->string('version'); //Current version
             $table->string('author'); // Author or team name
             $table->string('overview'); //Brief overview

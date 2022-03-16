@@ -9,11 +9,12 @@ class Uploads extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'language',
+        'type',
         'name',
         'version',
         'author',
         'overview',
-        'description'
+        'description',
+        'language'
     ];
 }

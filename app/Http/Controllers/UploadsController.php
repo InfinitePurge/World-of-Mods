@@ -9,25 +9,28 @@ class UploadsController extends Controller
 {
     public function index()
     {
-        return view('Uploads');
+        $uploads = Uploads::all();
+        return view('Uploads', compact('uploads'));
     }
     public function store(Request $request)
     {
         $validated = $request -> validate([
-            'language' => "required|max:10",
+            'type' =>"required",
             'name' => "required|max:20",
             'version' => "required|max:20",
             'author' => "required|max:20",
             'overview' => "required|max:100",
-            'description' => "required|max:1000"
+            'description' => "required|max:1000",
+            'language' => 'required|max:69'
         ]);
         Uploads::create([
-            'language' => request(),
-            'name' => request(),
-            'version' => request(),
-            'author' => request(),
-            'overview' => request(),
-            'description' => request()
+            'type' => request('type'),
+            'name' => request('name'),
+            'version' => request('version'),
+            'author' => request('author'),
+            'overview' => request('overview'),
+            'description' => request('description'),
+            'language' => request('language')
             //'owner' => 1
         ]);
 
