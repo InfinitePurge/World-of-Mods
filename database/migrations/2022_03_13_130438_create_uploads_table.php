@@ -18,6 +18,7 @@ return new class extends Migration
             // $table->string('mod');
             // $table->string('languageradio');
             $table->string('type');
+            $table->string('game');
             $table->string('name'); //Mod name
             $table->string('language'); //Mod language
             $table->string('version'); //Current version

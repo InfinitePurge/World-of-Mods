@@ -32,13 +32,13 @@
      
 
 <div class="mb-3">
-<select class="form-select" aria-label="Default select example">
+<select class="form-select" id="game" name="game" aria-label="Default select example">
   <option selected>Choose game</option>
-  <option value="1">Skyrim Special Edition</option>
-  <option value="2">Skyrim Legendary edition</option>
-  <option value="3">Skyrim</option>
-  <option value="4">Fallout 76</option>
-  <option value="5">Fallout 4</option>
+  <option value="Skyrim Special Edition">Skyrim Special Edition</option>
+  <option value="Skyrim Legendary edition">Skyrim Legendary edition</option>
+  <option value="Skyrim">Skyrim</option>
+  <option value="Fallout 76">Fallout 76</option>
+  <option value="Fallout 4">Fallout 4</option>
 </select>
 </div>
 <div class="input-group mb-3">

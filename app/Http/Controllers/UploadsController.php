@@ -16,6 +16,7 @@ class UploadsController extends Controller
     {
         $validated = $request -> validate([
             'type' =>"required",
+            'game' =>"required",
             'name' => "required|max:20",
             'version' => "required|max:20",
             'author' => "required|max:20",
@@ -26,6 +27,7 @@ class UploadsController extends Controller
         Uploads::create([
             'type' => request('type'),
             'name' => request('name'),
+            'game' => request('game'),
             'version' => request('version'),
             'author' => request('author'),
             'overview' => request('overview'),

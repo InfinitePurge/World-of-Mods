@@ -10,6 +10,7 @@ class Uploads extends Model
     use HasFactory;
     protected $fillable = [
         'type',
+        'game',
         'name',
         'version',
         'author',
