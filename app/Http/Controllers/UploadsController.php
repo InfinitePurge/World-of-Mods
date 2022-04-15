@@ -36,6 +36,6 @@ class UploadsController extends Controller
             //'owner' => 1
         ]);
 
-        return redirect('/');
+        return redirect('/dashboard');
     }
 }
