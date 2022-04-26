@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\UploadsController;
+use App\Http\Controllers\OurPolicyController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +19,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/About', [AboutController::class, 'index' ]);
+{
+    
+}
+
+Route::get('/OurPolicy', [OurPolicyController::class, 'index' ]);
+{
+    
+}
 
 Route::get('/uploads', [UploadsController::class, 'index' ]);
 {

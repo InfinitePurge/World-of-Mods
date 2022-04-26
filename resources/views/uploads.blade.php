@@ -1,8 +1,10 @@
 @extends('layouts.main')
 
 @section('content')
+
 <h3 class="my-3 text-center">  Upload Mod</h3>
 @if ($errors ->any())
+
   <div class ="alert alert-danger">
       <ul>
           @foreach ($errors->all() as $error)
